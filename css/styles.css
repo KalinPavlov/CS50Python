@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+div {
+    background-color: teal;
+    width: 500px;
+    height: 400px;
+    margin: 30px;
+    padding: 20px;
+}
