@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                
+                // Initially set the window size.
+                set_size()
+
+                // Set the window size on resizing.
+                window.onresize = () => {
+                    set_size()
+                }
+            });
+
+            function set_size() {
+                document.querySelector('#window_size').innerHTML = `Window Size: ${window.innerWidth} x ${window.innerHeight}`
+            }
+        </script>
+    </head>
+    <body>
+        <div id="window_size"></div>
+    </body>
+</html>
