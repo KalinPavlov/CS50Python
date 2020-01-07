@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <link rel="stylesheet" type="text/css" href="./../static/css/styles.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+        <script id="post" type="text/x-handlebars-template">
+            <div class="post">
+                {% raw -%}
+                    {{ contents }}
+                {%- endraw %}
+                <button class="hide">Hide</button>
+            </div>
+        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+    </head>
+    <body>
+        <div id="posts">
+        </div>
+    </body>
+</html>
