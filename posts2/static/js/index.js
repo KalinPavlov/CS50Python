@@ -14,6 +14,14 @@ window.onscroll = () => {
     }
 };
 
+// If hide button is clicked, delete the post.
+document.addEventListener('click', event => {
+    const element = event.target;
+    if (element.className === 'hide') {
+        element.parentElement.remove();
+    }
+});
+
 // Load next set of posts.
 function load() {
 
@@ -46,6 +54,6 @@ function add_post(contents) {
     // Create new post.
     const post = post_template({'contents': contents});
 
-    document.querySelector('#posts').innerHTML += post
-
-};
+    // Add post to DOM.
+    document.querySelector('#posts').innerHTML += post;
+}
