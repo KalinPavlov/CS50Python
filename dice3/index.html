@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roll Dice</title>
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+        <script id="result" type="text/x-handlebars-template">
+            <li>
+                You rolled:
+                {{#each values}}
+                    <img alt="{{ this }}" title="{{ this }}" src="img/{{ this }}.png">
+                {{/each}}
+                (Total: {{ total }})
+                </li>
+        </script>
+        <script type="text/javascript" src="./js/index.js"></script>
+    </script>
+    </head>
+    <body>
+        <input id="counter" type="number" placeholder="Number of Rolls" min="1" value="1">
+        <button id="roll">Roll</button>
+        <ul id="rolls">
+        </ul>
+    </body>
+</html>
