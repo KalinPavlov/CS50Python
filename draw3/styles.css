@@ -1,0 +1,25 @@
+.container {
+    text-align: center;
+}
+
+#draw {
+    border: 1px solid black;
+}
+
+#colorBox {
+    border: 1px solid black;
+    width: 200px;
+}
+
+.colors {
+    display: inline-block;
+    margin: auto;
+    border: 1px solid black;
+    width: 15px;
+    height: 15px;
+}
+
+.panel-option {
+    display: inline-block;
+    margin: 10px;
+}
